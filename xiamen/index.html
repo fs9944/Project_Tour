@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://fonts.googleapis.com/css?family=Tangerine:400,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Xiamen</title>
+   </head>
+   <body>
+      <header class="header">
+         <div class="brand">
+            <h1 class="title">Explore Xiamen's Charm</h1>
+         </div>
+         <nav id="nav-bar" class="main-nav">
+            <ul>
+               <li>                  
+                  <i class="fa fa-home" style="color: whitesmoke;"></i>
+                  <a href="../index.html" class="nav-link">Home</a>
+               </li>
+               <li>                  
+                  <i class="fa fa-question-circle" style="color: whitesmoke;"></i>
+                  <a href="#about" class="nav-link">About</a>
+               </li>
+               <li>
+                  <i class="fa fa-plane" style="color: whitesmoke;"></i>
+                  <a href="#products" class="nav-link">Tours</a>
+               </li>
+               <li>
+                  <i class="fa fa-phone-square" style="color: whitesmoke;"></i>
+                  <a href="#contact" class="nav-link">Contact</a>
+               </li>
+               <li>
+                <i class="fa fa-map-marker" style="color: whitesmoke;"></i>
+                  <a class="mainmenu" onclick="openNav()">Map</a>
+               </li>
+            </ul>
+         </nav>
+         <div id="myNav1" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+            </div>
+         </div>
+      </header>
+      <div id="main_pic"></div>
+      <main>
+         <section id="about">
+            <h2 class="heading">Why you should visit Xiamen?</h2>
+            <div class="container">
+               <div class="product-container">
+                  <a href="spots.html">
+                  <img src="img/travel_guider_p007.jpg" alt="Rose Type Two" class="product-image">
+                  </a>
+                  <h2 class="about-text">SCENIC SPOTS</h2>
+                  <p class="product-description">
+                     Gulangyu covers an area of 1.87 square kilometers, and has famous tourist attractions like Sunlight Rock, Shuzhuang Garden and Harmonium Museum. Here you may stroll to a quiet lane, or take a sunbath on the beach; there are Chinese and western architectures of various features.
+                  </p>
+               </div>
+               <div class="product-container">
+                  <a href="delicacies.html">
+                  <img src="img/travel_guider_p009.jpg" alt="Rose Type Two" class="product-image">
+                  </a>
+                  <h2 class="about-text">DELICACIES</h2>
+                  <p class="product-description">
+                     Stir fry the muscovy duck with sesame oil and then add mature ginger and rice wine to have it cooked. It smells appetizing and tastes sweet and spicy. It clears the liver and nourishes the lungs, tonifies the stomach and spleen, accelerate circulation of blood, and dispels the cold. 
+                  </p>
+               </div>
+               <div class="product-container">
+                  <a href="times.html">
+                  <img src="img/travel_guider_p008.jpg" alt="Rose Type Two" class="product-image">
+                  </a>
+                  <h2 class="about-text">ROMANTIC TIMES</h2>
+                  <p class="product-description">
+                     Completed and put into use in February 1987, Gulangyu Concert Hall is an important place for reception of high and serious music performances. Many art organizations from Japan, the US, Romania, Philippines, Singapore, Russia and Croatia, and symphony orchestras have give performances here. More importantly, concerts held at regular time, generally at 19:30, are free accessible to the public.
+                  </p>
+               </div>
+            </div>
+         </section>
+         <section id="products">
+            <h2 class="heading">Choose Tours</h2>
+            <div class="container">
+               <div class="product-container">
+                  <img src="img/20081211016248249.jpg" alt="Rose Type One" class="product-image">
+                  <h2 class="product-title">2 Days Xiamen Tour</h2>
+                  <p class="product-description">
+                     Tour Code: CTXM01
+                     <br>
+                     Tour Duration: 2 Days
+                     <br>
+                     Attractions: Gulangyu (Isle of Blown Waves), South Putuo Temple, Hulishan Canon Platform.
+                     <br><br><br>
+                  </p>
+                  <p class="product-price">Price: $910</p>
+                  <button class="product-select" onclick="selectTours(1)">Select</button>
+               </div>
+               <div class="product-container">
+                  <img src="img/20081518016233244.jpg" alt="Rose Type Two" class="product-image">
+                  <h2 class="product-title">5 Day Highlights of Xiamen Tour</h2>
+                  <p class="product-description">
+                     Tour Code: CTXM02
+                     <br>
+                     Tour Duration: 5 Days
+                     <br>
+                     Attractions: Earth Buildings of Yongding/Fujian Tulou, Gulangyu (Isle of Blown Waves), South Putuo Temple, Hulishan Canon Platform, Jimei.
+                     <br><br>
+                  </p>
+                  <p class="product-price">Price: $1042</p>
+                  <button class="product-select" onclick="selectTours(2)">Select</button>
+               </div>
+               <div class="product-container">
+                  <img src="img/110510153322.jpg" alt="Rose Type Three" class="product-image">
+                  <h2 class="product-title">5 Days Xiamen Tulou Tour with Gulangyu Island</h2>
+                  <p class="product-description">
+                     Tour Code: CTXM03
+                     <br>
+                     Tour Duration: 5 Days
+                     <br>
+                     Attractions: Gulangyu (Isle of Blown Waves), South Putuo Temple
+                     <br><br><br>
+                  </p>
+                  <p class="product-price">Price: $1320</p>
+                  <button class="product-select" onclick="selectTours(3)">Select</button>
+               </div>
+            </div>
+         </section>
+         <section id="contact">
+            <h2 class="heading">Contact Us</h2>
+            <div class="contact-container">
+               <p class="contact-description">Feel free to contact us over the phone or by e-mail. 
+                Facebook&nbsp;<i class="fa fa-facebook-square">&nbsp;</i>
+                Twitter&nbsp;<i class="fa fa-twitter-square">&nbsp;</i> 
+              </p>
+               <div class="right">
+                  <div class="contact-details">
+                     <div>
+                        <p>23, Lorem Ipsum Avenue</p>
+                        <p>01-123, City, Country</p>
+                     </div>
+                  </div>
+                  <div class="contact-details">
+                     <div>
+                        <p>+01 123 456 789</p>
+                     </div>
+                  </div>
+                  <div class="contact-details">
+                     <div>
+                        <p>mail@loremipsum.com</p>
+                     </div>
+                  </div>
+               </div>               
+            </div>
+         </section>
+      </main>
+      <div class="overlay-form">
+         <a class="close-btn" onclick="selectTours(0)">&times;</a>
+         <form action="index.html">
+            <div>
+               <div>
+                  <p id="tourname" class="tourname"></p>
+                  <h3>Billing Address</h3>
+                  <br>
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="john@example.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="New York">
+                  <div>
+                     <label for="state">State</label>
+                     <input type="text" id="state" name="state" placeholder="NY">
+                  </div>
+                  <div>
+                     <label for="zip">Zip</label>
+                     <input type="text" id="zip" name="zip" placeholder="10001">
+                  </div>
+               </div>
+            </div>
+            <h3>Payment</h3>
+            <br>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+               <i class="fa fa-cc-visa" style="color:navy;"></i>
+               <i class="fa fa-cc-amex" style="color:blue;"></i>
+               <i class="fa fa-cc-mastercard" style="color:rgb(207, 107, 107);"></i>
+               <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div>
+               <div>
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2025">
+               </div>
+               <div>
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+               </div>
+            </div>
+            <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="Continue to checkout" class="btn">
+         </form>
+      </div>
+      <div id="myNav" class="overlay">
+         <div id="map">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="attraction_map">
+               <div class="mapcon map02"><img src="img/attraction_map02.jpg" alt="map02"></div>
+               <div class="mapcon map03"><img src="img/attraction_map03.jpg" alt="map03"></div>
+               <div class="region">
+                  <a onclick="view('tongan')" id="tongan">■ Tong`an</a>
+                  <a onclick="view('jimei')" id="jimei">■ Jimei</a>
+                  <a onclick="view('xiangan')" id="xiangan">■ Xiang`an</a>
+                  <a onclick="view('haicang')" id="haicang">■ Haicang</a>
+                  <a onclick="view('huli')" id="huli">■ Huli</a>
+                  <a onclick="view('siming')" id="siming">■ Siming</a>
+               </div>
+               <div class="map_l">
+                  <h2>OVERVIEW OF XIAMEN</h2>
+                  <p>The coordinates of Xiamen are 118 ° 04 ′ 04 ″ E and
+                     24 ° 26 ′ 46 ″ N. Xiamen is located in the southeast coast
+                     of China. It is made up of Xiamen Island, Gulangyu and
+                     some coastal areas on the north bank of inland Jiulong River.
+                     Altogether, these cover an area of 1,699.34 square kilometers,
+                     among them, Xiamen Island, the fourth largest island of
+                     Fujian covering an area of 141.09 square kilometers. It has a
+                     permanent population of 4,110,000 as of the end of 2018. It is
+                     divided into 6 districts- Siming, Huli, Jimei, Haicang, Tong'an,
+                     Xiang'an. It has awarded honors such as Four Consecutive
+                     National Civilized City, China's Outstanding Tourism City,
+                     National Model City for Environmental Protection, National
+                     Hygienic City, National Garden City, International Garden City
+                     and UN- Habitat Scroll of Honor Award.
+                  </p>
+               </div>
+               <div class="map_r">
+                  <p id="showView">
+                     <img src="img/map_pic001.jpg" alt="pic001" width="233" height="65">
+                     Gulangyu covers an area of 1.87 square kilometers, and has famous tourist attractions like Sunlight Rock, Shuzhuang Garden and Harmonium Museum. Here you may stroll to a quiet lane, or take a sunbath on the beach; there are Chinese and western architectures of various features, and natural scenery.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <footer class="footer">
+         <h3>Author: Shengguang Guo</h3>
+         <p><small><i>Copyright &copy; 2021 </i></small></p>
+      </footer>
+      <script>               
+         function openNav() {
+           document.getElementById("myNav").style.width = "100%";
+         }
+         
+         function closeNav() {
+           document.getElementById("myNav").style.width = "0%";
+         }
+         
+         function selectTours(flag) {
+          document.getElementById("tourname").innerHTML = "";
+           if(flag == 1) {
+            document.getElementById("tourname").innerHTML = "Tour: 2 Days Xiamen Tour";
+           }
+           else if(flag == 2) {
+            document.getElementById("tourname").innerHTML = "5 Day Highlights of Xiamen Tour";
+           }
+           else if(flag == 3) {
+            document.getElementById("tourname").innerHTML = "5 Days Xiamen Tulou Tour with Gulangyu Island";
+           }
+           document.body.classList.toggle('activeForm');
+         }
+         
+         function view(area){
+               var viewHtml="<img src=\"img/map_pic001.jpg\" width=\"233\" height=\"65\">"+"Gulangyu covers an area of 1.87 square kilometers, and has famous tourist attractions like Sunlight Rock, Shuzhuang Garden and Harmonium Museum. Here you may stroll to a quiet lane, or take a sunbath on the beach; there are Chinese and western architectures of various features, and natural scenery that will make poets and literary men want to ...";
+               if(area=='tongan'){
+                   viewHtml="<img src=\"img/map_pic006.jpg\" width=\"233\" height=\"65\">"+"Tong'an Movie &TV City has scale-down antique architectures, including Tian'anmen, Hall of Supreme Harmony, Hall of Mental Cultivation, Gallery of the Summer Palace and Ming- Qing Street, etc. Have you ever dreamt of becoming an emperor/empress? Tong'an Movie &TV City can help realize your dream.";
+               }else if(area=='jimei'){
+                   viewHtml="<img src=\"img/map_pic007.jpg\" width=\"233\" height=\"65\">"+"The Ancient Courtyard Folk Culture Garden and the show of Southern Fujian Legend are the two distinctive attractions of the Courtyard. The former demonstrates the cultural essence of Southern Fujian with rich regional features while the latter enables you to comprehensively understand the custom of Southern Fujian by combining high technology...";
+               }else if(area=='xiangan'){
+                   viewHtml="<img src=\"img/map_pic005.jpg\" width=\"233\" height=\"65\">"+"Authentic Taiwanese snacks + duty free, one and only nationwide! is the unique advantage of Dadeng Town. Here you can buy various commodities originally produced in Taiwan, with some of them duty- free. Tourists can buy duty- free Taiwanese commodities with prices no more than RMB 6,000 Yuan each day.";
+               }else if(area=='haicang'){
+                   viewHtml="<img src=\"img/map_pic008.jpg\" width=\"233\" height=\"65\">"+"Riyuegu Hot Spring Theme Park, equipped with 5- star hotels and hundreds of distinctive outdoor hot spring pools, can satisfy all your expectations for a hot spring. With elegant environment full of exotic Southeast Asian styles, you can relax mind and body in each corner and enjoy the comfort here, to get rid of your physical fatigue.";
+               }else if(area=='huli'){
+                   viewHtml="<img src=\"img/map_pic002.jpg\" width=\"233\" height=\"65\">"+"Shinegood Culture Gallery, situated in Wuyuan Bay,is the largest ancient jade- themed gallery in Asia. With rich collections, it ranks among the top private gallery in China.";
+               }else if(area=='siming'){
+                   viewHtml="<img src=\"img/map_pic001.jpg\" width=\"233\" height=\"65\">"+"Gulangyu covers an area of 1.87 square kilometers, and has famous tourist attractions like Sunlight Rock, Shuzhuang Garden and Harmonium Museum. Here you may stroll to a quiet lane, or take a sunbath on the beach; there are Chinese and western architectures of various features, and natural scenery that will make poets and literary men want to ...";
+               }
+               document.getElementById("showView").innerHTML = viewHtml;
+           }  
+      </script>  
+   </body>
+</html>

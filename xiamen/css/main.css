@@ -1,0 +1,38 @@
+#map{
+    width:100%; 
+    margin: 0px auto; width: 1230px;
+    background:#3ba0e6
+}
+
+.attraction_map {
+    position:relative; 
+    width:1230px; 
+    height:689px; 
+    background:url(../img/attraction_map.jpg) center 0 no-repeat;
+}
+
+.region a{position: absolute;  font-size: 14px; font-family: Arial; font-weight: 700; color: #fff; cursor:pointer;}
+.region a:hover{color:#87ceff}
+.region a#tongan{left: 558px; top: 273px;} 
+.region a#jimei{left: 483px; top: 427px;} 
+.region a#xiangan{left: 719px; top: 383px;} 
+.region a#haicang{left: 462px; top: 544px;} 
+.region a#huli{left: 599px; top: 544px;} 
+.region a#siming{left: 588px; top: 589px;} 
+.mapcon {display:none; position:absolute; left:125px;}
+.map_l {
+    position:absolute; 
+    left:-100px; 
+    width:400px; 
+    color:#fff; 
+    padding-top:30px;
+}
+.map_l h2 {
+    font-size:24px; 
+    line-height:48px; 
+    font-weight:700; 
+    color:#fff;
+}
+.map_l p {width:400px; font-size:16px; line-height:18px; font-weight:700; color:#fff;}
+.map_r {position:absolute; margin-top:60px;right:0; width:273px; height:293px; background:#005c9b}
+.map_r p{margin:20px auto 10px; width:233px; height:230px; font-size:14px; line-height:14px; color:#fff; overflow:hidden;}

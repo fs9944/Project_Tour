@@ -1,0 +1,254 @@
+@charset "utf-8";
+/* Purpose: CSS document for planting web page */
+/* Developed by: Shen */
+/* Script Date: August 30, 2021 */
+/* for total style*/
+/* styling * selector */
+* {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.527);
+  }
+/* styling body selector */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(167, 129, 61);
+    background-image: url("../images/background.gif");
+    background-repeat:repeat;
+    background-attachment:scroll;
+}
+/* styling header h1 selector */
+header h1{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 300%;
+    font-weight: bold;
+}
+/* styling p::first-letter selector */
+p::first-letter{
+    font-size: 200%;
+    font-stretch: extra-expanded;
+    font-style: italic;
+}
+/* styling main selector */
+main{
+    position: absolute;
+    left: 15px;
+    margin: 0%;
+    padding: 0;
+}
+footer{
+    text-align: center;
+    background-color:rgba(207, 169, 99, 0.5);
+    border-radius: 30px;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 50%;
+    width: 100%;
+    height: 10%;
+}
+/*****************/
+/*Index_Dunhuang.html*/
+/* styling .dunhuang_layout selector */
+.dunhuang_layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.05fr;
+    grid-gap: 10px;
+}
+/* styling .dunhuang_layout 401px~768px selector */
+@media screen and (min-width: 401px) and (max-width: 768px) {
+    .dunhuang_layout {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 0.3f;
+        height: fit-content;
+    }
+}
+/* for viewport layout less than 401px */
+@media screen and (max-width:400px) {
+    .dunhuang_layout {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr 0.3f;
+        height: fit-content;
+    }
+}
+/* styling .dunhuang_layout>div selector */
+.dunhuang_layout>div{
+    width: auto;
+    background-color: rgba(207, 169, 99, 0.5);
+    border-radius: 30px;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+/* styling anchor selector */
+a:link {
+    text-decoration:dotted;
+    color:rgba(0, 0, 0, 0.527);
+    font-weight: bold;
+}
+a:visited{
+    text-decoration: underline;
+    color:rgba(0, 0, 0, 0.527);
+    font-weight: bold;
+}
+a:hover {
+    color: rgb(120, 240, 248);
+}
+a:active {
+    color:grey;
+    background-color: lightblue;
+    text-decoration: none;
+}
+/*****************/
+/*  things to do in dunhuang.html */
+/* styling #grid selector */
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+    margin: 50px auto;
+}
+/* styling #grid ul selector */
+#grid ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-break: 10px;
+}
+/* styling #grid li selector */
+#grid li{
+    list-style-type: none;
+    margin: 5px;
+    padding: 0 ;
+    line-break: 5px;
+    font-size: 50%;
+    background-color: rgba(207, 169, 99, 0.5);
+    text-align: center;
+    border-radius: 5px;
+    font-family: cursive;
+}
+/* styling .things_layout selector */
+.things_layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: auto;
+    grid-gap: 10px;
+}
+/* styling .dunhuang_layout 401px~768px selector */
+@media screen and (min-width: 401px) and (max-width: 768px) {
+    .things_layout {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        height: fit-content;       
+    }
+}
+/* for viewport layout less than 401px */
+@media screen and (max-width:400px) {
+    .things_layout {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        height: fit-content;
+    }
+}
+/* styling .things_layout>div selector */
+.things_layout>div{
+    width: auto;
+    background-color:rgba(207, 169, 99, 0.5);
+    margin: 0 0;
+    padding: 20px 0;
+    border-radius: 30px;
+}
+/*****************/
+/*Dunhuang Weather-Best Times to Go.html*/
+/* styling .list selector */
+.list{
+    font-size: 200%;
+    font-family: cursive;
+    background-color: transparent;
+}
+/* styling .list li selector */
+.list li{
+    text-align: center;
+    background-color: transparent;
+    font-weight: bold
+}
+/*****************/
+/*What to Eat and Drink in Dunhuang.html*/
+/* styling dl selector */
+dl{
+    list-style: inside;
+}
+/* styling dt selector */
+dt{
+    font-size: 150%;
+    padding: 20px;
+    margin: 0%;
+    padding-left: 0%;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    font-family: cursive;
+}
+/* styling dd::first-letter selector */
+dd::first-letter{
+    font-size: 200%;
+    font-stretch: extra-expanded;
+    font-style: italic;
+}
+/*****************/
+/*Bask in History and Art in the Mogao Caves.html*/
+/* styling .table selector */
+.table {
+    display: table;
+    display:flex;
+    align-items:flex-end;
+    margin-left: 20px;
+}
+/* styling .cell selector */
+.cell {
+    display: table-cell;
+    overflow: scroll;
+    height:700px;
+}
+/* styling nav > * selector */
+nav > * {
+    display: block;
+    margin: 18px 25px 18px 0;
+}
+/* styling a > img selector */
+a > img {
+    width: 100px;
+    height: 100px;
+}
+/* styling iframe selector */
+iframe {
+    border: 15px inset rgba(207, 169, 99, 0.5);
+    width:100%;
+    height:100%;
+}
+/* styling .cell1 selector */
+.cell1 {
+    display: table-cell;
+    margin-left: 10px;
+
+}
+/* styling .back selector */
+.back{
+    width:fit-content;
+    background-color:rgba(207, 169, 99, 0.5);
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+ 

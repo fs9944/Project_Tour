@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="sytles/styles.css">      
+      <title>China Tour Guide</title>
+      <style>
+          .mySlides {
+              display:none;
+              object-fit: cover;
+              border-radius: 10px;
+            }
+      </style>
+        
+   </head>
+   <body>
+      <header class="header" style="width:65%; margin: auto; border-radius: 10px;">
+         <div class="brand">
+            <h1 class="title" style="color: white;">China Tour Guide</h1>
+         </div>
+         <nav id="nav-bar" class="main-nav">
+            <ul>
+               <li>                  
+                  <a href="#about" class="nav-link">Tour</a>
+               </li>
+               <li>
+                  <a href="#subscribe" class="nav-link">Subscribe</a>
+               </li>
+               <li>
+                  <a href="#contact" class="nav-link">Contact</a>
+               </li>
+               <li>
+            </ul>
+         </nav>         
+      </header>
+
+      <div style="width:65%; margin: auto;" class="product-container">
+        <img class="mySlides" src="images/recommended-tours.jpg" style="width:100%">
+        <img class="mySlides" src="images/select-tour.jpg" style="width:100%">
+        <img class="mySlides" src="images/liriver.jpg" style="width:100%">
+        <img class="mySlides" src="images/zhangjiajie.jpg" style="width:100%">
+      </div>
+
+   
+      <main>
+         <section id="about">
+            <div class="container">
+               <div class="product-container">
+                  <a href="xiamen/index.html">
+                  <img src="images/xiamen.jpg" alt="Rose Type Two" class="product-image">
+                  </a>
+                  <h2 class="about-text">Xiamen</h2>
+               </div>
+               <div class="product-container">
+                  <a href="jinan/home_jinan.html">
+                  <img src="images/travel_guider_p009.jpg" alt="Rose Type Two" class="product-image">
+                  </a>
+                  <h2 class="about-text">Jinan</h2>
+               </div>
+               <div class="product-container">
+                  <a href="dunhuang/Index_Dunhuang.html">
+                  <img src="images/travel_guider_p008.jpg" alt="Rose Type Two" class="product-image">
+                  </a>
+                  <h2 class="about-text">Dunhuang</h2>
+               </div>
+
+               <div class="product-container">
+                  <a href="dunhuang/Index_Dunhuang.html">
+                  <img src="images/travel_guider_p008.jpg" alt="Rose Type Two" class="product-image">
+                  </a>
+                  <h2 class="about-text">Xi'an</h2>
+               </div>
+
+            </div>
+         </section>
+
+         <section id="subscribe" class="subscribe" style="width: 65%; margin: auto;">
+            <form id="form" class="subscribe-form" action="index.html">
+              <label for="email" class="label">Subscribe if you would like to receive news</label>
+              <div class="input-group">
+                <input type="email" name="email" id="email" class="email" placeholder="Write your email" required>
+                <input type="submit" value="Subscribe" id="submit" class="submit">
+              </div>
+            </form>
+          </section>
+   
+         <section id="contact" style="width:65%; margin: auto;">
+            <div class="contact-container">
+               <p class="contact-description">Feel free to contact us over the phone or by e-mail. 
+                Facebook&nbsp;<i class="fa fa-facebook-square">&nbsp;</i>
+                Twitter&nbsp;<i class="fa fa-twitter-square">&nbsp;</i> 
+              </p>
+               <div class="right">
+                  <div class="contact-details">
+                     <div>
+                        <p>23, Lorem Ipsum Avenue</p>
+                        <p>01-123, City, Country</p>
+                     </div>
+                  </div>
+                  <div class="contact-details">
+                     <div>
+                        <p>+01 123 456 789</p>
+                     </div>
+                  </div>
+                  <div class="contact-details">
+                     <div>
+                        <p>mail@loremipsum.com</p>
+                     </div>
+                  </div>
+               </div>               
+            </div>
+         </section>
+      </main>      
+
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>      
+   </body>
+</html>
